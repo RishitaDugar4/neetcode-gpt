@@ -20,6 +20,4 @@ class Solution:
         # ground_truth is an Nx1 NumPy array
         # HINT: np.mean(), np.square() will be useful
         # return round(your_answer, 5)
-        
-        mse = np.mean(np.square(model_prediction-ground_truth))
-        return np.round(mse, 5)
+        return np.round(np.mean(np.square(model_prediction-ground_truth)), 5)
